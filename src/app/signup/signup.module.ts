@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { SignupRoutingModule } from './signup-routing.module';
 import { SignupComponent } from './signup.component';
@@ -10,8 +11,9 @@ import {
 @NgModule({
   imports: [
     CommonModule,
-    SignupRoutingModule
+    SignupRoutingModule,
+    NgbModule.forRoot()
   ],
-  declarations: [SignupComponent]
+  declarations: [SignupComponent,ModalComponent]
 })
 export class SignupModule { }
